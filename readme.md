@@ -1,9 +1,23 @@
 # Using rust in python
 
-<https://www.infoworld.com/article/3687744/how-to-write-python-extensions-in-rust-with-pyo3.html>
+A simple example of using rust to create a module that can be consumed in python. Simplicity of python and performance of rust. All from [this](https://www.infoworld.com/article/3687744/how-to-write-python-extensions-in-rust-with-pyo3.html) article.
 
-``` pwsh
-virtualenv venv
+Create a virtual environment: 
 
-maturin dev -r
-```
+`virtualenv venv`
+
+Install `maturin` into it:
+
+`pip install maturin`
+
+Build the rust module:
+
+`maturin dev -r`
+
+Watch it get installed into the virtual environment:
+
+`pip list`
+
+Use it in your python.
+
+Tidy.
